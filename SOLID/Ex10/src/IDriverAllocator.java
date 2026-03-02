@@ -1,4 +1,3 @@
-package PACKAGE_NAME;
-
 public interface IDriverAllocator {
+    String allocate(String studentId);
 }

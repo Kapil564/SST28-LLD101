@@ -1,4 +1,3 @@
-package PACKAGE_NAME;
-
 public interface IDistanceCalculator {
+    double km(GeoPoint a, GeoPoint b);
 }

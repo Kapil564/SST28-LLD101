@@ -1,4 +1,7 @@
-package PACKAGE_NAME;
+public class SecretaryTool implements MinutesTools {
+    private final MinutesBook book;
+    public SecretaryTool(MinutesBook book) { this.book = book; }
 
-public class SecretaryTool {
+    @Override public void addMinutes(String text) { book.add(text); }
+
 }

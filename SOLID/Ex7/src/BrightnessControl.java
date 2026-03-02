@@ -1,4 +1,3 @@
-package PACKAGE_NAME;
-
-public interface BrightnessControl {
+public interface BrightnessControl extends SmartClassroomDevice {
+    void setBrightness(int pct);
 }

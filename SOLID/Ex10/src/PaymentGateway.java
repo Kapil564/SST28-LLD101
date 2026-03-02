@@ -1,4 +1,6 @@
-package PACKAGE_NAME;
-
-public class PaymentGateway {
+public class PaymentGateway implements IPaymentGateway {
+    @Override
+    public String charge(String studentId, double amount) {
+        return "TXN-9001";
+    }
 }

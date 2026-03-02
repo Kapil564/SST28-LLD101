@@ -1,4 +1,3 @@
-package PACKAGE_NAME;
-
-public interface InputControl {
+public interface InputControl extends SmartClassroomDevice {
+    void connectInput(String port);
 }

@@ -1,4 +1,7 @@
-package PACKAGE_NAME;
+public class Projector implements PowerControl, InputControl {
+    private boolean on;
 
-public class Projector {
+    @Override public void powerOn() { on = true; }
+    @Override public void powerOff() { on = false; System.out.println("Projector OFF"); }
+    @Override public void connectInput(String port) { if (on) System.out.println("Projector ON (" + port + ")"); }
 }
